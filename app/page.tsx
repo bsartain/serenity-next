@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail, MapPin, Clock } from "lucide-react";
-import Image from "next/image";
+import "flowbite";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -363,9 +363,6 @@ export default function Home() {
                         View Specials
                       </button>
                     ) : null}
-                    <button onClick={() => scrollToSection("contact")} className="primary-btn">
-                      Book Now!
-                    </button>
                   </div>
                 </div>
               </div>
@@ -469,6 +466,78 @@ export default function Home() {
               <img src="/images/face-massage.jpg" alt="Massage therapy room" className="w-full h-full object-cover rounded-lg shadow-xl" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="team" className={`py-20 ${lightSection}`}>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Meet The Team</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 m-5">
+          {team.map((item, index) => {
+            return (
+              <div className="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <div
+                  style={{
+                    backgroundImage: `url(${item.img})`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    minHeight: "50vh",
+                  }}
+                />
+                <div className="p-5">
+                  <a href="#">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</h5>
+                  </a>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+                  </p>
+
+                  <div
+                    id={`accordion-flush-${index}`}
+                    data-accordion="collapse"
+                    data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                    data-inactive-classes="text-gray-500 dark:text-gray-400"
+                  >
+                    <h2 id={`accordion-flush-heading-${index}`}>
+                      <button
+                        type="button"
+                        className="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                        data-accordion-target={`#accordion-flush-body-${index}`}
+                        aria-expanded="false"
+                        aria-controls={`accordion-flush-body-${index}`}
+                      >
+                        <span>More...</span>
+                        <svg
+                          data-accordion-icon
+                          className="w-3 h-3 rotate-180 shrink-0"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+                        </svg>
+                      </button>
+                    </h2>
+                    <div id={`accordion-flush-body-${index}`} className="hidden" aria-labelledby={`accordion-flush-heading-${index}`}>
+                      <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+                        <p className="mb-2 text-gray-500 dark:text-gray-400">
+                          Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns,
+                          modals, navbars, and more.
+                        </p>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Check out this guide to learn how to{" "}
+                          <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">
+                            get started
+                          </a>{" "}
+                          and start developing websites even faster with components on top of Tailwind CSS.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
