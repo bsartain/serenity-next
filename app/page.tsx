@@ -360,11 +360,11 @@ export default function Home() {
                   <div className="flex">
                     {hasSpecial ? (
                       <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2">
-                        View Special Offer
+                        View Specials
                       </button>
                     ) : null}
                     <button onClick={() => scrollToSection("contact")} className="primary-btn">
-                      Book Appointment
+                      Book Now!
                     </button>
                   </div>
                 </div>
