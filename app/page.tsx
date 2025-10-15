@@ -487,9 +487,7 @@ export default function Home() {
                   <a href="#">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{item.name}</h5>
                   </a>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-                  </p>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{item.name} Bio coming soon</p>
 
                   <div
                     id={`accordion-flush-${index}`}
@@ -520,17 +518,7 @@ export default function Home() {
                     </h2>
                     <div id={`accordion-flush-body-${index}`} className="hidden" aria-labelledby={`accordion-flush-heading-${index}`}>
                       <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                        <p className="mb-2 text-gray-500 dark:text-gray-400">
-                          Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns,
-                          modals, navbars, and more.
-                        </p>
-                        <p className="text-gray-500 dark:text-gray-400">
-                          Check out this guide to learn how to{" "}
-                          <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">
-                            get started
-                          </a>{" "}
-                          and start developing websites even faster with components on top of Tailwind CSS.
-                        </p>
+                        <p className="mb-2 text-gray-500 dark:text-gray-400">{item.name} Bio coming soon</p>
                       </div>
                     </div>
                   </div>
