@@ -168,7 +168,7 @@ export default function Home() {
                   </div>
                   <div className="flex">
                     {hasSpecial ? (
-                      <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2">
+                      <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2 mt-6">
                         View Specials
                       </button>
                     ) : null}
