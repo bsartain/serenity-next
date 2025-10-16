@@ -162,6 +162,10 @@ export default function Home() {
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
                   <h1 className="text-5xl md:text-7xl font-bold mb-4 text-center">{image.title}</h1>
                   <p className="text-xl md:text-2xl mb-8 text-center">{image.subtitle}</p>
+                  <div className="excerpt-container">
+                    <hr className="york-excerpt-line" />
+                    <h6>Serving York SC for over 20 years</h6>
+                  </div>
                   <div className="flex">
                     {hasSpecial ? (
                       <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2">
