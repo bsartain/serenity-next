@@ -29,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % filteredHeroImages.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
