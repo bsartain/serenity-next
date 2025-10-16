@@ -20,14 +20,14 @@ export default function StoryModal() {
         >
           {/* Modal Box */}
           <div
-            className={`bg-white rounded-2xl shadow-lg p-6 w-11/12 max-w-3xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 ease-out ${
+            className={`bg-[#FDFCF9] rounded-2xl shadow-lg p-6 w-11/12 max-w-3xl max-h-[90vh] overflow-y-auto relative transform transition-all duration-300 ease-out ${
               isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-2xl font-bold mb-4 text-[#4B4B40]">Our Story</h2>
 
-            <div className="space-y-6 text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-[#4B4B40] leading-relaxed">
               <p>
                 Vicki and Charlene first met as competitors in the massage industry back in October 1998—Vicki was practicing out of her home, while
                 Charlene worked in Dr. Tim Puckett’s chiropractic office. Despite being competitors, they soon discovered a shared goal: to have the
