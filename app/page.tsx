@@ -167,8 +167,12 @@ export default function Home() {
                     <h6>Serving York SC for over 20 years</h6>
                   </div>
                   <div className="flex">
+                    {/* <button className="primary-btn mr-2 mt-6">Call To Book Now</button> */}
+                    <button onClick={() => (window.location.href = "tel:8036840559")} className="primary-btn mr-2 mt-6 cursor-pointer">
+                      Call To Book Now
+                    </button>
                     {hasSpecial ? (
-                      <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2 mt-6">
+                      <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2 mt-6 cursor-pointer">
                         View Specials
                       </button>
                     ) : null}
