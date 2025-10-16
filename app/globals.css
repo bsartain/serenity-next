@@ -73,3 +73,12 @@ h6 {
   width: 300px;
   border: 1px #ffffff solid;
 }
+
+.logo-container {
+  display: flex;
+}
+
+.logo {
+  width: 37px;
+  margin-right: 10px;
+}
