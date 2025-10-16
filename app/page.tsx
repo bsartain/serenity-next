@@ -2,6 +2,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, Mail, MapPin, Clock } from "lucide-react";
 import "flowbite";
+import StoryModal from "@/app/components/StoryModal";
+import { team, serviceCategories, heroImages, faqs } from "./data";
+import FaqSection from "./components/FaqSection";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,210 +14,9 @@ export default function Home() {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
 
-  const heroImages = [
-    {
-      url: "/images/christmas.jpg",
-      title: "Christmas Specials",
-      subtitle: "Give the gift of relaxation this Christmas with a massage gift certificate — the perfect way to show you care!",
-      content:
-        '<div class="p-6 rounded-2xl space-y-6 text-white"> <h2 class="text-2xl font-playfair font-semibold">Serenity Therapeutic Massage Christmas Gift Certificate Specials</h2> <div class="space-y-2"> <p class="text-lg font-semibold">2 × 60min Massage Sessions – $140.00</p> <p class="text-lg font-semibold">4 × 30min Massage Sessions – $170.00</p> </div> <div class="space-y-2"> <h3 class="text-xl font-semibold">Package #1</h3> <p>$80 – 30min Massage &amp; 1 Aqua Chi Foot Detox</p> </div> <div class="space-y-2"> <h3 class="text-xl font-semibold">Package #2</h3> <p>$110 – 60min Massage &amp; 1 Aqua Chi Foot Detox</p> </div> <div class="space-y-2"> <h3 class="text-xl font-semibold">Package #3</h3> <p>$130 – 60min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p> </div> <div class="space-y-1 mt-4"> <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p> <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS</p> </div> </div>',
-      active: false,
-      special: false,
-    },
-    {
-      url: "/images/mothers-day.jpg",
-      title: "Mothers Day Special",
-      subtitle: "Show your love and appreciation with a rejuvenating massage experience designed just for her.",
-      content:
-        '<div> <p style="margin-bottom:25px">Our Mother’s Day Special gift certificates let Mom unwind, refresh, and feel cared for — the perfect way to say “thank you” for all she does every day.</p><p><strong>2 × 60-minute Massage Sessions:</strong> $140.00</p> <p><em>or</em></p> <p><strong>1 × 90-minute Massage Session:</strong> $100.00</p> <hr style="margin: 1.5rem 0;" /> <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Package One</h3> <p> <strong>Includes:</strong> 1 × 60-minute Massage Session &amp; 1 Aqua Chi Foot Detox<br /> <strong>Price:</strong> $110.00 </p> <h3 style="font-weight: 600; margin-bottom: 0.5rem; margin-top: 40px">Package Two</h3> <p> <strong>Includes:</strong> 1 × 60-minute Massage Session, 1 Aqua Chi Foot Detox, &amp; 1 Ear Coning<br /> <strong>Price:</strong> $165.00 </p> </div>',
-      active: false,
-      special: false,
-    },
-    {
-      url: "/images/massage.jpg",
-      title: "Therapeutic Touch",
-      subtitle: "Healing mind, body & spirit",
-      content: "",
-      active: true,
-      special: false,
-    },
-    {
-      url: "/images/hot-rock.jpg",
-      title: "Relaxation & Wellness",
-      subtitle: "Experience the healing touch",
-      content: "",
-      active: true,
-      special: false,
-    },
-    {
-      url: "/images/oil.jpg",
-      title: "Professional Care",
-      subtitle: "Your journey to better health",
-      content: "",
-      active: true,
-      special: false,
-    },
-  ];
-
   const filteredHeroImages = heroImages.filter((image) => image.active);
 
   const hasSpecial = heroImages.some((item) => item.special);
-
-  const serviceCategories = [
-    {
-      category: "Massage Therapy",
-      services: [
-        {
-          name: "30 min. Therapeutic Massage Session",
-          duration: "30 min",
-          price: "$45",
-          description: "Quick therapeutic session for targeted relief",
-        },
-        {
-          name: "60 min. Therapeutic Massage Session",
-          duration: "60 min",
-          price: "$75",
-          description: "Full body therapeutic massage for complete relaxation",
-        },
-        {
-          name: "90 min. Therapeutic Massage Session",
-          duration: "90 min",
-          price: "$105",
-          description: "Extended therapeutic session for deep muscle work",
-        },
-      ],
-    },
-    {
-      category: "Hot Rock Therapy",
-      services: [
-        {
-          name: "60 min. Hot Rock Massage Session",
-          duration: "60 min",
-          price: "$95",
-          description: "Heated stones combined with massage for deep relaxation",
-        },
-        {
-          name: "90 min. Hot Rock Massage Session",
-          duration: "90 min",
-          price: "$120",
-          description: "Extended hot stone therapy for ultimate relaxation",
-        },
-      ],
-    },
-    {
-      category: "Thai Massage Therapy",
-      services: [
-        {
-          name: "60 min. Thai Massage Session",
-          duration: "60 min",
-          price: "$95",
-          description: "Traditional Thai massage with stretching and acupressure",
-        },
-        {
-          name: "90 min. Thai Massage Session",
-          duration: "90 min",
-          price: "$120",
-          description: "Extended Thai massage for comprehensive body work",
-        },
-      ],
-    },
-    {
-      category: "Specialty Therapies",
-      services: [
-        {
-          name: "Rossiter Workout System",
-          duration: "60 min",
-          price: "$95",
-          description: "Powerful stretching technique for pain relief and flexibility",
-        },
-        {
-          name: "Fertility Massage",
-          duration: "90 min",
-          price: "$150",
-          description: "Specialized massage to support reproductive health",
-        },
-        {
-          name: "Cranio Sacral Therapy - 60 min",
-          duration: "60 min",
-          price: "$95",
-          description: "Gentle therapy focusing on craniosacral system",
-        },
-        {
-          name: "Cranio Sacral Therapy - 90 min",
-          duration: "90 min",
-          price: "$120",
-          description: "Extended craniosacral therapy for deeper healing",
-        },
-      ],
-    },
-    {
-      category: "Wellness Services",
-      services: [
-        {
-          name: "Ear Coning Session",
-          duration: "45 min",
-          price: "$55",
-          description: "Natural ear candling for relaxation and ear health",
-        },
-        {
-          name: "Aqua Chi - Ionic Foot Bath",
-          duration: "30 min",
-          price: "$45",
-          description: "Detoxifying ionic foot bath for wellness and balance",
-        },
-      ],
-    },
-    {
-      category: "Discounted Packages",
-      services: [
-        {
-          name: "(6) 60 min. Therapeutic Massages",
-          duration: "6 sessions",
-          price: "$444",
-          description: "Save $6 per session with this package deal",
-        },
-        {
-          name: "(12) 60 min. Therapeutic Massages",
-          duration: "12 sessions",
-          price: "$876",
-          description: "Save $24 per session with this exclusive package",
-        },
-      ],
-    },
-  ];
-
-  const team = [
-    {
-      name: "Vickie Rose (Retired)",
-      content: "",
-      img: "/images/vickie.jpg",
-    },
-    {
-      name: "Anna J. McKee",
-      content: "",
-      img: "/images/anna1.jpg",
-    },
-    {
-      name: "Christie Edwards",
-      content: "",
-      img: "/images/christie.jpg",
-    },
-    {
-      name: "Eric Grose",
-      content: "",
-      img: "/images/eric.jpg",
-    },
-    {
-      name: "Amanda Rose",
-      content: "",
-      img: "/images/Amanda-bio-photo.jpg",
-    },
-    {
-      name: "Charlene Hracs",
-      content: "",
-      img: "/images/Charlene-headshot.jpg",
-    },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -295,11 +97,11 @@ export default function Home() {
             <h3 className={`text-2xl transition-colors lowercase ${isScrolled ? "text-[#4B4B40]" : "text-white"}`}>Serenity Therapeutic Massage</h3>
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              {["home", "services", "about", "contact"].map((item) => (
+              {["home", "services", "about", "team", "faq", "contact"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className={`text-sm uppercase transition-colors hover:text-teal-500 ${isScrolled ? "text-gray-800" : "text-white"}`}
+                  className={`text-sm uppercase transition-colors hover:text-[#3f3f37] ${isScrolled ? "text-gray-800" : "text-white"}`}
                 >
                   {item}
                 </button>
@@ -449,22 +251,29 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">About Us</h2>
+              <p className="text-lg mb-6 leading-relaxed">Welcome to Serenity Therapeutic Massage — where family, healing, and care come together.</p>
+
               <p className="text-lg mb-6 leading-relaxed">
-                Welcome to Serenity Therapeutic Massage, where healing and relaxation come together. With over 15 years of experience, our licensed
-                massage therapists are dedicated to providing personalized care that addresses your unique needs.
+                At Serenity, we’re more than just a massage therapy practice — we’re a family serving families. For over two decades, we’ve cared for
+                our neighbors here in York with the same warmth and attention we’d give our own loved ones.
               </p>
+
               <p className="text-lg mb-6 leading-relaxed">
-                We believe in the power of therapeutic touch to restore balance, reduce stress, and promote overall wellness. Our tranquil space is
-                designed to help you escape the demands of daily life and reconnect with yourself.
+                Each session is personal. Our licensed massage therapists take time to understand your needs — whether you’re looking to ease chronic
+                pain, recover from an injury, or simply relax after a long day.
               </p>
-              <p className="text-lg leading-relaxed">
-                Whether you're seeking relief from chronic pain, recovering from injury, or simply need to unwind, we're here to support your wellness
-                journey.
+
+              <p className="text-lg mb-6 leading-relaxed">
+                We believe in the power of compassionate, therapeutic touch to bring balance, peace, and renewal to body and mind. Our cozy,
+                family-built space is designed to help you unwind, feel at home, and leave refreshed.
               </p>
+
+              <p className="text-lg mb-6 leading-relaxed">Come experience the difference of a place where our family treats your family.</p>
             </div>
             <div className="relative h-96 lg:h-full">
               <img src="/images/face-massage.jpg" alt="Massage therapy room" className="w-full h-full object-cover rounded-lg shadow-xl" />
             </div>
+            <StoryModal />
           </div>
         </div>
       </section>
@@ -527,6 +336,10 @@ export default function Home() {
             );
           })}
         </div>
+      </section>
+
+      <section id="faq" className={`py-20 ${darkSection}`}>
+        <FaqSection />
       </section>
 
       <iframe

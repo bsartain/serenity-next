@@ -53,3 +53,23 @@ h6 {
   font-weight: 600 !important;
   border-radius: 30px !important;
 }
+
+.story-btn {
+  color: #4b4b40;
+  background-color: #fdfcf9;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 17px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.story-btn:hover {
+  color: #fdfcf9;
+  background-color: #4b4b40;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 17px;
+  width: 300px;
+  border: 1px #ffffff solid;
+}
