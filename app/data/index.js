@@ -43,6 +43,28 @@ export const heroImages = [
     special: false,
   },
   {
+    url: "/images/valentines-day.jpg",
+    title: "Valentines Day Special",
+    subtitle: "Love. Relax. Repeat.",
+    content: `<div class="space-y-4 text-start">
+                <h2 class="text-2xl font-bold uppercase">Valentine’s Day Specials</h2>
+
+                <div class="space-y-2">
+                  <p>2 – 60 Minute Massages – <strong>$140</strong></p>
+                  <p>4 – 30 Minute Massages – <strong>$170</strong></p>
+                </div>
+
+                <div class="space-y-2">
+                  <p>30 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$80</strong></p>
+                  <p>60 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$105</strong></p>
+                  <p>60 Minute Massage, Ear Coning &amp; Aqua Chi Foot Detox – <strong>$165</strong></p>
+                </div>
+              </div>
+              `,
+    active: false,
+    special: false,
+  },
+  {
     url: "/images/mothers-day.jpg",
     title: "Mothers Day Special",
     subtitle: "Show your love and appreciation with a rejuvenating massage experience designed just for her.",
