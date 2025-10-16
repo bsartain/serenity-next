@@ -187,11 +187,16 @@ export default function Home() {
             <section key={index} id="specials" className={`py-8 ${darkSection}`}>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-25 mb-25">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div className="relative h-96 lg:h-full">
-                    <img src={item.url} alt="Massage therapy room" className="w-full h-full object-cover rounded-lg shadow-xl" />
+                  <div
+                    style={{
+                      backgroundImage: `url('${item.url}')`,
+                    }}
+                    className="specials-image-specails-container"
+                  >
+                    <div className="specials-image-overlay"></div>
+                    <h2 className="specials-image-text">{item.title}</h2>
                   </div>
                   <div>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6">{item.title}</h2>
                     <div dangerouslySetInnerHTML={{ __html: item.content }} />
                   </div>
                 </div>
