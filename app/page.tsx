@@ -135,7 +135,7 @@ export default function Home() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t">
-            {["home", "services", "about", "contact"].map((item) => (
+            {["home", "services", "about", "team", "faq", "contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
