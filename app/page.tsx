@@ -169,10 +169,10 @@ export default function Home() {
                   <div className="flex">
                     {/* <button className="primary-btn mr-2 mt-6">Call To Book Now</button> */}
                     <button onClick={() => (window.location.href = "tel:8036840559")} className="primary-btn mr-2 mt-6 cursor-pointer">
-                      Call To Book Now
+                      Call To Book
                     </button>
                     {hasSpecial ? (
-                      <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2 mt-6 cursor-pointer">
+                      <button onClick={() => scrollToSection("specials")} className="primary-btn mr-2 mt-6">
                         View Specials
                       </button>
                     ) : null}
