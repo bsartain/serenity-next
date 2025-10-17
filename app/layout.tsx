@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Serenity Therapeutic Massage | Relax. Renew. Restore. | York SC",
   description:
     "Experience personalized massage therapy in York, SC. Relieve stress, ease tension, and renew your body with our professional massage services.",
@@ -31,6 +31,9 @@ export const metadata = {
         alt: "Relaxing massage therapy room in York, SC",
       },
     ],
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
