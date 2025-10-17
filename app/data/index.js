@@ -90,18 +90,18 @@ export const heroImages = [
     title: "Mothers Day Special",
     subtitle: "Show your love and appreciation with a rejuvenating massage experience designed just for her.",
     content: `<div>
-          <p style="margin-bottom:25px">Our Mother’s Day Special gift certificates let Mom unwind, refresh, and feel cared for — the perfect way to say “thank you” for all she does every day.</p>
-          <p><strong>2 × 60-minute Massage Sessions:</strong> $140.00</p>
-          <p><em>or</em></p>
-          <p><strong>1 × 90-minute Massage Session:</strong> $100.00</p>
-          <hr style="margin: 1.5rem 0;" />
-          <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Package One</h3>
-          <p> <strong>Includes:</strong> 1 × 60-minute Massage Session &amp; 1 Aqua Chi Foot Detox
-              <br /> <strong>Price:</strong> $110.00 </p>
-          <h3 style="font-weight: 600; margin-bottom: 0.5rem; margin-top: 40px">Package Two</h3>
-          <p> <strong>Includes:</strong> 1 × 60-minute Massage Session, 1 Aqua Chi Foot Detox, &amp; 1 Ear Coning
-              <br /> <strong>Price:</strong> $165.00 </p>
-      </div>`,
+                  <p style="margin-bottom:25px">Our Mother’s Day Special gift certificates let Mom unwind, refresh, and feel cared for — the perfect way to say “thank you” for all she does every day.</p>
+                  <p><strong>2 × 60-minute Massage Sessions:</strong> $140.00</p>
+                  <p><em>or</em></p>
+                  <p><strong>1 × 90-minute Massage Session:</strong> $100.00</p>
+                  <hr style="margin: 1.5rem 0;" />
+                  <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Package One</h3>
+                  <p> <strong>Includes:</strong> 1 × 60-minute Massage Session &amp; 1 Aqua Chi Foot Detox
+                      <br /> <strong>Price:</strong> $110.00 </p>
+                  <h3 style="font-weight: 600; margin-bottom: 0.5rem; margin-top: 40px">Package Two</h3>
+                  <p> <strong>Includes:</strong> 1 × 60-minute Massage Session, 1 Aqua Chi Foot Detox, &amp; 1 Ear Coning
+                      <br /> <strong>Price:</strong> $165.00 </p>
+              </div>`,
     active: false,
     special: false,
   },
