@@ -23,7 +23,7 @@ export const heroImages = [
                   </div>
                   <div class="space-y-1 mt-4">
                       <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p>
-                      <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS</p>
+                      <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS.</p>
                   </div>
               </div>`,
     active: false,
