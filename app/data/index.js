@@ -3,8 +3,29 @@ export const heroImages = [
     url: "/images/christmas.jpg",
     title: "Christmas Specials",
     subtitle: "Give the gift of relaxation this Christmas with a massage gift certificate — the perfect way to show you care!",
-    content:
-      '<div class="p-6 rounded-2xl space-y-6 text-white"> <h2 class="text-2xl font-playfair font-semibold">Serenity Therapeutic Massage Christmas Gift Certificate Specials</h2> <div class="space-y-2"> <p class="text-lg font-semibold">2 × 60min Massage Sessions – $140.00</p> <p class="text-lg font-semibold">4 × 30min Massage Sessions – $170.00</p> </div> <div class="space-y-2"> <h3 class="text-xl font-semibold">Package #1</h3> <p>$80 – 30min Massage &amp; 1 Aqua Chi Foot Detox</p> </div> <div class="space-y-2"> <h3 class="text-xl font-semibold">Package #2</h3> <p>$110 – 60min Massage &amp; 1 Aqua Chi Foot Detox</p> </div> <div class="space-y-2"> <h3 class="text-xl font-semibold">Package #3</h3> <p>$130 – 60min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p> </div> <div class="space-y-1 mt-4"> <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p> <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS</p> </div> </div>',
+    content: `<div class="p-6 rounded-2xl space-y-6 text-white">
+          <h2 class="text-2xl font-playfair font-semibold">Serenity Therapeutic Massage Christmas Gift Certificate Specials</h2>
+          <div class="space-y-2">
+              <p class="text-lg font-semibold">2 × 60min Massage Sessions – $140.00</p>
+              <p class="text-lg font-semibold">4 × 30min Massage Sessions – $170.00</p>
+          </div>
+          <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Package #1</h3>
+              <p>$80 – 30min Massage &amp; 1 Aqua Chi Foot Detox</p>
+          </div>
+          <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Package #2</h3>
+              <p>$110 – 60min Massage &amp; 1 Aqua Chi Foot Detox</p>
+          </div>
+          <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Package #3</h3>
+              <p>$130 – 60min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
+          </div>
+          <div class="space-y-1 mt-4">
+              <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p>
+              <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS</p>
+          </div>
+      </div>`,
     active: true,
     special: true,
   },
@@ -68,8 +89,19 @@ export const heroImages = [
     url: "/images/mothers-day.jpg",
     title: "Mothers Day Special",
     subtitle: "Show your love and appreciation with a rejuvenating massage experience designed just for her.",
-    content:
-      '<div> <p style="margin-bottom:25px">Our Mother’s Day Special gift certificates let Mom unwind, refresh, and feel cared for — the perfect way to say “thank you” for all she does every day.</p><p><strong>2 × 60-minute Massage Sessions:</strong> $140.00</p> <p><em>or</em></p> <p><strong>1 × 90-minute Massage Session:</strong> $100.00</p> <hr style="margin: 1.5rem 0;" /> <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Package One</h3> <p> <strong>Includes:</strong> 1 × 60-minute Massage Session &amp; 1 Aqua Chi Foot Detox<br /> <strong>Price:</strong> $110.00 </p> <h3 style="font-weight: 600; margin-bottom: 0.5rem; margin-top: 40px">Package Two</h3> <p> <strong>Includes:</strong> 1 × 60-minute Massage Session, 1 Aqua Chi Foot Detox, &amp; 1 Ear Coning<br /> <strong>Price:</strong> $165.00 </p> </div>',
+    content: `<div>
+          <p style="margin-bottom:25px">Our Mother’s Day Special gift certificates let Mom unwind, refresh, and feel cared for — the perfect way to say “thank you” for all she does every day.</p>
+          <p><strong>2 × 60-minute Massage Sessions:</strong> $140.00</p>
+          <p><em>or</em></p>
+          <p><strong>1 × 90-minute Massage Session:</strong> $100.00</p>
+          <hr style="margin: 1.5rem 0;" />
+          <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Package One</h3>
+          <p> <strong>Includes:</strong> 1 × 60-minute Massage Session &amp; 1 Aqua Chi Foot Detox
+              <br /> <strong>Price:</strong> $110.00 </p>
+          <h3 style="font-weight: 600; margin-bottom: 0.5rem; margin-top: 40px">Package Two</h3>
+          <p> <strong>Includes:</strong> 1 × 60-minute Massage Session, 1 Aqua Chi Foot Detox, &amp; 1 Ear Coning
+              <br /> <strong>Price:</strong> $165.00 </p>
+      </div>`,
     active: false,
     special: false,
   },
