@@ -26,8 +26,8 @@ export const heroImages = [
                       <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS</p>
                   </div>
               </div>`,
-    active: true,
-    special: true,
+    active: false,
+    special: false,
   },
   {
     url: "/images/fathers-day.jpg",
