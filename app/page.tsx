@@ -95,7 +95,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="logo-container">
-              <img src={isScrolled ? "/images/serenity-logo.png" : "/images/serenity-logo-white.png"} alt="Serenity" className="logo" />
+              <img src={isScrolled ? "/images/logo.png" : "/images/logo.png"} alt="Serenity" className="logo" />
               <h3 className={`text-2xl transition-colors lowercase ${isScrolled ? "text-[#4B4B40]" : "text-white"}`}>Serenity Therapeutic Massage</h3>
             </div>
             {/* Desktop Menu */}
