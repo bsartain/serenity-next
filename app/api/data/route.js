@@ -1,3 +1,138 @@
+import { NextResponse } from "next/server";
+
+const heroImages = [
+  {
+    url: "/images/christmas.jpg",
+    title: "Christmas Specials",
+    subtitle: "Give the gift of relaxation this Christmas with a massage gift certificate — the perfect way to show you care!",
+    content: `<div class="pr-6 pl-6 pb-6 rounded-2xl space-y-6 text-white">
+                    <h2 class="text-2xl font-playfair font-semibold">Serenity Therapeutic Massage Christmas Gift Certificate Specials</h2>
+                    <div class="space-y-2">
+                        <p class="text-lg font-semibold">2 × 60min Massage Sessions – $140.00</p>
+                        <p class="text-lg font-semibold">4 × 30min Massage Sessions – $170.00</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Package #1</h3>
+                        <p>$80 – 30min Massage &amp; 1 Aqua Chi Foot Detox</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Package #2</h3>
+                        <p>$110 – 60min Massage &amp; 1 Aqua Chi Foot Detox</p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl font-semibold">Package #3</h3>
+                        <p>$130 – 60min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
+                    </div>
+                    <div class="space-y-1 mt-4">
+                        <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p>
+                        <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS.</p>
+                    </div>
+                </div>`,
+    active: false,
+    special: false,
+  },
+  {
+    url: "/images/fathers-day.jpg",
+    title: "Fathers Day Special",
+    subtitle: "For the Man Who Gives His All — Give Him Rest.",
+    content: `<div className="space-y-6 text-center">
+                  <p class="mb-4">
+                    <strong>On Sale from 6/9 thru 6/20</strong>
+                  </p>
+  
+                  <div class="space-y-2">
+                    <div className="mb-4">
+                      <strong>2 × 60 min. massage sessions — $120</strong>
+                      <div>($10 savings)</div>
+                    </div>
+  
+                    <div class="mb-4">
+                      <strong>4 × 30 min. massage sessions — $130</strong>
+                      <div>($10 savings)</div>
+                    </div>
+  
+                    <div class="mb-4">
+                      <strong>1 × 60 min. massage session &amp; 1 Aqua Chi Foot Detox — $90</strong>
+                      <div>($10 savings)</div>
+                    </div>
+  
+                    <div class="mb-4">
+                      <strong>1 × 30 min. massage, 1 Aqua Chi Foot Detox &amp; 1 Ear Coning — $110</strong>
+                      <div>($10 savings)</div>
+                    </div>
+                </div>
+                `,
+    active: false,
+    special: false,
+  },
+  {
+    url: "/images/valentines-day.jpg",
+    title: "Valentines Day Special",
+    subtitle: "Love. Relax. Repeat.",
+    content: `<div class="space-y-4 text-start">
+                  <h2 class="text-2xl font-bold uppercase">Valentine’s Day Specials</h2>
+  
+                  <div class="space-y-2">
+                    <p>2 – 60 Minute Massages – <strong>$140</strong></p>
+                    <p>4 – 30 Minute Massages – <strong>$170</strong></p>
+                  </div>
+  
+                  <div class="space-y-2">
+                    <p>30 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$80</strong></p>
+                    <p>60 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$105</strong></p>
+                    <p>60 Minute Massage, Ear Coning &amp; Aqua Chi Foot Detox – <strong>$165</strong></p>
+                  </div>
+                </div>
+                `,
+    active: false,
+    special: false,
+  },
+  {
+    url: "/images/mothers-day.jpg",
+    title: "Mothers Day Special",
+    subtitle: "Show your love and appreciation with a rejuvenating massage experience designed just for her.",
+    content: `<div>
+                    <p style="margin-bottom:25px">Our Mother’s Day Special gift certificates let Mom unwind, refresh, and feel cared for — the perfect way to say “thank you” for all she does every day.</p>
+                    <p><strong>2 × 60-minute Massage Sessions:</strong> $140.00</p>
+                    <p><em>or</em></p>
+                    <p><strong>1 × 90-minute Massage Session:</strong> $100.00</p>
+                    <hr style="margin: 1.5rem 0;" />
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Package One</h3>
+                    <p> <strong>Includes:</strong> 1 × 60-minute Massage Session &amp; 1 Aqua Chi Foot Detox
+                        <br /> <strong>Price:</strong> $110.00 </p>
+                    <h3 style="font-weight: 600; margin-bottom: 0.5rem; margin-top: 40px">Package Two</h3>
+                    <p> <strong>Includes:</strong> 1 × 60-minute Massage Session, 1 Aqua Chi Foot Detox, &amp; 1 Ear Coning
+                        <br /> <strong>Price:</strong> $165.00 </p>
+                </div>`,
+    active: false,
+    special: false,
+  },
+  {
+    url: "/images/massage.jpg",
+    title: "Rest. Renew. Rebalance.",
+    subtitle: "Let tension fade under caring hands. Personalized massage from our family to yours.",
+    content: "",
+    active: true,
+    special: false,
+  },
+  {
+    url: "/images/hot-rock.jpg",
+    title: "Warmth That Heals",
+    subtitle: "Melt away stress with soothing warmth and deep relaxation.",
+    content: "",
+    active: true,
+    special: false,
+  },
+  {
+    url: "/images/oil.jpg",
+    title: "Care You Can Feel.",
+    subtitle: "Every touch, every detail — crafted to bring comfort and calm.",
+    content: "",
+    active: true,
+    special: false,
+  },
+];
+
 export const serviceCategories = [
   {
     category: "Massage Therapy",
@@ -124,32 +259,32 @@ export const serviceCategories = [
 export const team = [
   {
     name: "Vickie Rose (Retired)",
-    content: "",
+    content: "Bio coming soon.",
     img: "/images/vickie.jpg",
   },
   {
     name: "Anna J. McKee",
-    content: "",
+    content: "Bio coming soon.",
     img: "/images/anna1.jpg",
   },
   {
     name: "Christie Edwards",
-    content: "",
+    content: "Bio coming soon.",
     img: "/images/christie.jpg",
   },
   {
     name: "Eric Grose",
-    content: "",
+    content: "Bio coming soon.",
     img: "/images/eric.jpg",
   },
   {
     name: "Amanda Rose",
-    content: "",
+    content: "Bio coming soon.",
     img: "/images/Amanda-bio-photo.jpg",
   },
   {
     name: "Charlene Hracs",
-    content: "",
+    content: "Bio coming soon.",
     img: "/images/Charlene-headshot.jpg",
   },
 ];
@@ -225,3 +360,7 @@ export const galleryImages = [
   { id: 5, src: "/images/relaxation-area.jpg", alt: "Relaxation Area" },
   { id: 6, src: "/images/massage-tools.jpg", alt: "Massage Tools" },
 ];
+
+export async function GET() {
+  return NextResponse.json({ heroImages, serviceCategories, team, faqs, galleryImages });
+}
