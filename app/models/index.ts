@@ -25,6 +25,7 @@ export interface ServiceCategory {
 }
 
 export interface Team {
+  id: number;
   name: string;
   content: string;
   img: string;

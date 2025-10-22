@@ -258,34 +258,116 @@ export const serviceCategories = [
 
 export const team = [
   {
+    id: 1,
     name: "Vickie Rose (Retired)",
     content: "Bio coming soon.",
     img: "/images/vickie.jpg",
   },
   {
+    id: 2,
     name: "Anna J. McKee",
     content: "Bio coming soon.",
     img: "/images/anna1.jpg",
   },
   {
+    id: 3,
     name: "Christie Edwards",
-    content: "Bio coming soon.",
+    content: `<p class="mb-4">
+                I became a Licensed Massage Therapist (LMT) in December 2011 and have proudly served the York area ever since. My style incorporates a diverse set of techniques, including Swedish, Deep Tissue, Myofascial Release, and Neuromuscular Therapy.
+              </p>
+
+              <p class="mb-4">
+                Every session is individually tailored to your needs, whether you are seeking general relaxation or relief from chronic pain. Your comfort is my priority:
+              </p>
+
+              <ul class="mb-5">
+                <li>I use nut-free massage oil for those with allergies.</li>
+                <li>I can happily customize lighting and music to accommodate any sensory preferences.</li>
+              </ul>
+
+              <p class="mb-4">
+                If you have any questions about how a session can benefit you, I welcome a phone consultation to ensure we are a great fit.
+              </p>
+
+              <p class="mb-4">
+                I chose this career intentionally because I genuinely love helping people. This is what I was always meant to do, and I believe you can feel that heartfelt intention in my touch.
+              </p>
+              `,
     img: "/images/christie.jpg",
   },
   {
+    id: 4,
+    name: "Tobi Johnson",
+    content: `<p class="mb-4">
+                After graduating, I became a stay-at-home mom to two amazing girls. Motherhood taught me the importance of self-care, leading me to prioritize massages for special occasions. Entering the empty nest phase in <strong>2023</strong>, I sought a fulfilling career that aligned with my passion for health and well-being. My defining moment came after finding relief from a torn rotator cuff and frozen shoulder thanks to a skilled massage therapist.
+              </p>
+
+              <p class="mb-4">
+                With encouragement from that therapist and my own desire to help others, I enrolled at the <strong>North Carolina School of Advanced Bodywork</strong> and received my <strong>LMBT license in 2024</strong>. I tailor my techniques to address each client’s specific needs, creating a comfortable and welcoming environment.
+              </p>
+
+              <p class="mb-4">Outside of work, I enjoy:</p>
+              <ul class="mb-4">
+                <li>Kayaking</li>
+                <li>Fishing</li>
+                <li>Hiking</li>
+              </ul>
+
+              <p class="mb-4">
+                Thank you for learning about me — I look forward to helping you on your journey to better health and well-being.
+              </p>
+              `,
+    img: "/images/tobi.jpg",
+  },
+  {
+    id: 5,
     name: "Eric Grose",
     content: "Bio coming soon.",
     img: "/images/eric.jpg",
   },
   {
+    id: 6,
     name: "Amanda Rose",
     content: "Bio coming soon.",
     img: "/images/Amanda-bio-photo.jpg",
   },
   {
+    id: 7,
     name: "Charlene Hracs",
-    content: "Bio coming soon.",
-    img: "/images/Charlene-headshot.jpg",
+    content: `<p class="mb-4">
+                My Cancelation Call-back List can be your key to an earlier appointment, if our schedules mesh.
+              </p>
+
+              <p class="mb-4">
+                I think I've always been a "therapist" at heart. I'm an empath and have pretty much felt other people's emotions and pain before I knew what it all meant or how to channel it for the betterment of others.
+              </p>
+
+              <p class="mb-4">
+                I've been licensed since 1998 (27 years) and have worked continuously to the present with compassion and care for the wonderful clients of York County, SC, and surrounding areas.
+              </p>
+
+              <p class="mb-4">
+                I started working on my husband after a work injury while we were dating. I saw his pain — I felt his pain — I responded with kindness. Not knowing how powerful the human touch is, but recognizing that each spasming back muscle could relax given the proper gentle touch and time to respond. I've kept him from having surgery using massage, along with him seeing his doctor for regular chiropractic adjustments.
+              </p>
+
+              <p class="mb-4">
+                I intuitively worked gentle massage with my daughters and grandchildren from birth to the present day. My daughter Amanda Rose and I have been blessed to work together for the past 21 years here at Serenity Therapeutic Massage.
+              </p>
+
+              <p class="mb-4">
+                My approach is not to attack the muscles but to gently put them at ease. With the many techniques I've learned over the years, I incorporate what I feel your body needs at that particular moment — Swedish/Relaxation, Full Body Manual Massage Cupping (my answer to deep tissue), Myofascial Release, heat/ice therapy, laughter, and energy work with the most subtle approach that often helps clients fall asleep during their session. I find that a high compliment.
+              </p>
+
+              <p class="mb-4">
+                I'm not going anywhere for a while.
+              </p>
+
+              <p class="mb-4">
+                Always Smiling<br />
+                <strong>Charlene</strong>
+              </p>
+              `,
+    img: "/images/charlene.jpg",
   },
 ];
 
