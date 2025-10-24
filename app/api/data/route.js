@@ -272,24 +272,24 @@ export const team = [
   {
     id: 3,
     name: "Christie Edwards",
-    content: `<p class="mb-4">
+    content: `<p class="mb-5 mt-5">
                 I became a Licensed Massage Therapist (LMT) in December 2011 and have proudly served the York area ever since. My style incorporates a diverse set of techniques, including Swedish, Deep Tissue, Myofascial Release, and Neuromuscular Therapy.
               </p>
 
-              <p class="mb-4">
+              <p class="mb-5 mt-5">
                 Every session is individually tailored to your needs, whether you are seeking general relaxation or relief from chronic pain. Your comfort is my priority:
               </p>
 
-              <ul class="mb-5">
+              <ul class="mb-5 mt-5 list-disc pl-5 space-y-2">
                 <li>I use nut-free massage oil for those with allergies.</li>
                 <li>I can happily customize lighting and music to accommodate any sensory preferences.</li>
               </ul>
 
-              <p class="mb-4">
+              <p class="mb-5 mt-5">
                 If you have any questions about how a session can benefit you, I welcome a phone consultation to ensure we are a great fit.
               </p>
 
-              <p class="mb-4">
+              <p class="mb-5 mt-5">
                 I chose this career intentionally because I genuinely love helping people. This is what I was always meant to do, and I believe you can feel that heartfelt intention in my touch.
               </p>
               `,
@@ -328,8 +328,35 @@ export const team = [
   {
     id: 6,
     name: "Amanda Rose",
-    content: "Bio coming soon.",
-    img: "/images/Amanda-bio-photo.jpg",
+    content: `<p class="mb-5 mt-5">
+                I attended <strong>Southeastern School of Neuromuscular and Massage Therapy</strong>
+                and graduated in <time datetime="2004">2004</time>. Soon after I decided to join my
+                mother <strong>Charlene</strong> and mother-in-law <strong>Vicki</strong> at
+                <em>Serenity Therapeutic Massage</em>.
+              </p>
+
+              <p class="mb-5 mt-5">
+                For the past 21 years I’ve taken many continuing education classes, learning a variety
+                of massage modalities to help my clients find relief from pain and/or stress. I
+                customize your massage session by using a wide range of techniques, including:
+              </p>
+
+              <ul class="mb-5 mt-5 list-disc pl-5 space-y-2">
+                <li>Swedish</li>
+                <li>Deep Tissue / Neuromuscular Therapy</li>
+                <li>Cupping Therapy</li>
+                <li>Reflexology</li>
+                <li>Hot Stones</li>
+                <li>Thai Massage</li>
+                <li>Manual Lymphatic Drainage (for detoxification)</li>
+              </ul>
+
+              <p class="mb-5 mt-5">
+                I am passionate about helping others feel relaxed, rejuvenated, and pain-free. I truly
+                enjoy being a massage therapist and making a positive difference in my clients’ health
+                and well-being.
+              </p>`,
+    img: "/images/amanda.jpg",
   },
   {
     id: 7,

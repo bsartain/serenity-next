@@ -127,3 +127,11 @@ h6 {
     height: 300px;
   }
 }
+
+.calendly-badge-content span {
+  display: none !important;
+}
+
+.calendly-badge-content {
+  border: 2px solid #4b4b40;
+}
