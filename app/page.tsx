@@ -10,6 +10,7 @@ import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import SpecialsSection from "./components/SpecialsSection";
 import ContactSection from "./components/ContactSection";
+import GiftCertificates from "./components/GiftCertificates";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -166,6 +167,11 @@ export default function Home() {
 
       {/* Specials Section */}
       <SpecialsSection activeSlides={activeSlides} darkSection={darkSection} />
+
+      {/* Services Section */}
+      <section className="py-16 bg-[#4B4B40] text-[#FDFCF9]">
+        <GiftCertificates />
+      </section>
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-[#FDFCF9] text-[#4B4B40]">
