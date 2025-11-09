@@ -362,10 +362,6 @@ export const team = [
     id: 7,
     name: "Charlene Hracs",
     content: `<p class="mb-4">
-                My Cancelation Call-back List can be your key to an earlier appointment, if our schedules mesh.
-              </p>
-
-              <p class="mb-4">
                 I think I've always been a "therapist" at heart. I'm an empath and have pretty much felt other people's emotions and pain before I knew what it all meant or how to channel it for the betterment of others.
               </p>
 
@@ -378,7 +374,7 @@ export const team = [
               </p>
 
               <p class="mb-4">
-                I intuitively worked gentle massage with my daughters and grandchildren from birth to the present day. My daughter Amanda Rose and I have been blessed to work together for the past 21 years here at Serenity Therapeutic Massage.
+                I intuitively worked gentle massage with my daughters and grandchildren from birth to the present day.
               </p>
 
               <p class="mb-4">
