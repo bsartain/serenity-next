@@ -21,15 +21,15 @@ const heroImages = [
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-xl font-semibold">Package #3</h3>
-                        <p>$130 – 60min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
+                        <p>$130 – 30min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
                     </div>
                     <div class="space-y-1 mt-4">
                         <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p>
                         <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS.</p>
                     </div>
                 </div>`,
-    active: false,
-    special: false,
+    active: true,
+    special: true,
   },
   {
     url: "/images/fathers-day.jpg",
@@ -362,7 +362,7 @@ export const team = [
     id: 7,
     name: "Charlene Hracs",
     content: `<p class="mb-4">
-                I think I've always been a "therapist" at heart. I'm an empath and have pretty much felt other people's emotions and pain before I knew what it all meant or how to channel it for the betterment of others.
+                I think I've always been a "therapist" at heart. I'm an empathetic and have pretty much felt other people's emotions and pain before I knew what it all meant or how to channel it for the betterment of others.
               </p>
 
               <p class="mb-4">
