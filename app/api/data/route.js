@@ -21,7 +21,7 @@ const heroImages = [
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-xl font-semibold">Package #3</h3>
-                        <p>$130 – 60min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
+                        <p>$130 – 30min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
                     </div>
                     <div class="space-y-1 mt-4">
                         <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p>
