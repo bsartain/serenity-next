@@ -266,8 +266,11 @@ export const team = [
   {
     id: 2,
     name: "Anna J. McKee",
-    content: "Bio coming soon.",
-    img: "/images/anna1.jpg",
+    content: `<p class="mb-5 mt-5">I am a Licensed Massage Therapist with over 16 years of experience. I began my career in 2009, spending seven years in a chiropractic office before transitioning to independent practice in 2016. This a B.S. in Psychology and experience working in an emergency room counseling role, I bring a strong foundation of compassion, presence, and clear communication to my work.</p>
+       <p class="mb-5 mt-5">I attended the Southeastern School of Neuromuscular Massage and am trained in Swedish Massage, Deep Tissue, Neuromuscular Therapy, Stretching, and Myofascial Release. My approach is client-centered—whether you prefer quiet relaxation or conversation, each session is tailored to your needs.</p>
+       <p class="mb-5 mt-5">Honesty and genuine connection guide my practice: if I know something, I’ll tell you. And I if I don’t, I’ll tell you that too. </p>
+       <p>See you soon.</p>`,
+    img: "/images/anna1.png",
   },
   {
     id: 3,
