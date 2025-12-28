@@ -28,8 +28,8 @@ const heroImages = [
                         <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS.</p>
                     </div>
                 </div>`,
-    active: true,
-    special: true,
+    active: false,
+    special: false,
   },
   {
     url: "/images/fathers-day.jpg",
@@ -394,6 +394,16 @@ export const team = [
               </p>
               `,
     img: "/images/charlene.jpg",
+  },
+  {
+    id: 8,
+    name: "Antonio 'Tony' Hammond",
+    content: `<p class="mb-4">I have a bachelor's degree in exercise and sports science. 
+              I was a chiropractic assistant for 2.5 years. 
+              I became a massage therapist to make people feel and function better, from the person that works at the desk all day to an athlete. 
+              I love making people feel  better, it gives me purpose. 
+              I cater each session to what you need, Swedish, deep tissue, sports massage, stretch, hot stones or cupping therapy. Making a person feel better makes me feel better.</p>`,
+    img: "",
   },
 ];
 
