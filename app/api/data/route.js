@@ -398,11 +398,13 @@ export const team = [
   {
     id: 8,
     name: "Antonio 'Tony' Hammond",
-    content: `<p class="mb-4">I have a bachelor's degree in exercise and sports science. 
-              I was a chiropractic assistant for 2.5 years. 
-              I became a massage therapist to make people feel and function better, from the person that works at the desk all day to an athlete. 
-              I love making people feel  better, it gives me purpose. 
-              I cater each session to what you need, Swedish, deep tissue, sports massage, stretch, hot stones or cupping therapy. Making a person feel better makes me feel better.</p>`,
+    content: `<p class="mb-4">
+                I hold a bachelor’s degree in Exercise and Sports Science and spent 2½ years working as a chiropractic assistant. 
+                My passion for helping people feel and function at their best led me to become a massage therapist. 
+                I work with everyone—from those who spend long hours at a desk to competitive athletes—tailoring each session to meet individual needs. 
+                Whether through Swedish massage, deep tissue work, sports massage, stretching, hot stones, or cupping therapy, my goal is always the same: to help you feel better in your body. 
+                Helping others find relief and improved movement gives my work meaning and purpose.
+              </p>`,
     img: "",
   },
 ];
