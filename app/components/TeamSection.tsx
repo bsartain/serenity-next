@@ -24,7 +24,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ team }) => {
               style={{
                 backgroundImage: `url(${member.img})`,
                 backgroundSize: "cover",
-                backgroundPosition: "top",
+                backgroundPosition: member.img.includes("tobi") ? "center" : "top",
                 minHeight: "50vh",
               }}
             />
