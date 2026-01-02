@@ -80,7 +80,7 @@ const ServicesSection: React.FC<{ services: Array<ServiceCategory> }> = ({ servi
                           </span>
                           <span className="text-xl font-semibold text-[#4B4B40]">{service.price}</span>
                         </div>
-                        <p className="text-gray-700 leading-relaxed">{service.description}</p>
+                        <div dangerouslySetInnerHTML={{ __html: service.description }} className="text-gray-700 leading-relaxed" />
                       </div>
                     ))}
                   </div>

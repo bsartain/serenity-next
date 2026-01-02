@@ -140,19 +140,19 @@ export const serviceCategories = [
       {
         name: "30 min. Therapeutic Massage Session",
         duration: "30 min",
-        price: "$45",
+        price: "$50-65",
         description: "Quick therapeutic session for targeted relief",
       },
       {
         name: "60 min. Therapeutic Massage Session",
         duration: "60 min",
-        price: "$75",
+        price: "$80-95",
         description: "Full body therapeutic massage for complete relaxation",
       },
       {
         name: "90 min. Therapeutic Massage Session",
         duration: "90 min",
-        price: "$105",
+        price: "$110-$125",
         description: "Extended therapeutic session for deep muscle work",
       },
     ],
@@ -163,31 +163,14 @@ export const serviceCategories = [
       {
         name: "60 min. Hot Rock Massage Session",
         duration: "60 min",
-        price: "$95",
+        price: "$115",
         description: "Heated stones combined with massage for deep relaxation",
       },
       {
         name: "90 min. Hot Rock Massage Session",
         duration: "90 min",
-        price: "$120",
+        price: "$135",
         description: "Extended hot stone therapy for ultimate relaxation",
-      },
-    ],
-  },
-  {
-    category: "Thai Massage Therapy",
-    services: [
-      {
-        name: "60 min. Thai Massage Session",
-        duration: "60 min",
-        price: "$95",
-        description: "Traditional Thai massage with stretching and acupressure",
-      },
-      {
-        name: "90 min. Thai Massage Session",
-        duration: "90 min",
-        price: "$120",
-        description: "Extended Thai massage for comprehensive body work",
       },
     ],
   },
@@ -196,8 +179,8 @@ export const serviceCategories = [
     services: [
       {
         name: "Rossiter Workout System",
-        duration: "60 min",
-        price: "$95",
+        duration: "30 min",
+        price: "$55",
         description: "Powerful stretching technique for pain relief and flexibility",
       },
       {
@@ -209,14 +192,15 @@ export const serviceCategories = [
       {
         name: "Cranio Sacral Therapy - 60 min",
         duration: "60 min",
-        price: "$95",
+        price: "$110",
         description: "Gentle therapy focusing on craniosacral system",
       },
       {
-        name: "Cranio Sacral Therapy - 90 min",
+        name: "Lymphatic Massage for full body detoxification - 90 min",
         duration: "90 min",
-        price: "$120",
-        description: "Extended craniosacral therapy for deeper healing",
+        price: "$125",
+        description:
+          "Lymphatic massage is a gentle, rhythmic full-body treatment that stimulates the lymphatic system to promote natural detoxification, reduce swelling, and support overall wellness.",
       },
     ],
   },
@@ -232,7 +216,7 @@ export const serviceCategories = [
       {
         name: "Aqua Chi - Ionic Foot Bath",
         duration: "30 min",
-        price: "$45",
+        price: "$55",
         description: "Detoxifying ionic foot bath for wellness and balance",
       },
     ],
@@ -241,16 +225,13 @@ export const serviceCategories = [
     category: "Discounted Packages",
     services: [
       {
-        name: "(6) 60 min. Therapeutic Massages",
-        duration: "6 sessions",
-        price: "$444",
-        description: "Save $6 per session with this package deal",
-      },
-      {
-        name: "(12) 60 min. Therapeutic Massages",
-        duration: "12 sessions",
-        price: "$876",
-        description: "Save $24 per session with this exclusive package",
+        name: "Gift Certificates Available",
+        duration: "",
+        price: "Package Price Per Therapist",
+        description: `<p class="mb-4">
+                        NO REFUNDS will be given on any services or Gift Certificate purchases. Any substitutions or upgrades will be discussed with therapist before appointment.
+                      </p>
+                      <p class="mb-4">*Not all therapists are trained in this technique.</p>`,
       },
     ],
   },
