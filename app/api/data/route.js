@@ -405,7 +405,7 @@ export const team = [
                 Whether through Swedish massage, deep tissue work, sports massage, stretching, hot stones, or cupping therapy, my goal is always the same: to help you feel better in your body. 
                 Helping others find relief and improved movement gives my work meaning and purpose.
               </p>`,
-    img: "/imges/tony.jpg",
+    img: "/images/tony.jpg",
   },
 ];
 
