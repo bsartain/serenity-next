@@ -302,22 +302,22 @@ export const team = [
     id: 4,
     name: "Tobi Johnson",
     content: `<p class="mb-4">
-                After graduating, I became a stay-at-home mom to two amazing girls. Motherhood taught me the importance of self-care, leading me to prioritize massages for special occasions. Entering the empty nest phase in <strong>2023</strong>, I sought a fulfilling career that aligned with my passion for health and well-being. My defining moment came after finding relief from a torn rotator cuff and frozen shoulder thanks to a skilled massage therapist.
+                I’m a graduate of the North Carolina School of Advanced Bodywork (2024) and hold a Bachelor
+                of Science in Occupational Therapy (2004). My background in OT gives me a strong
+                understanding of how the body moves and functions in everyday life, and I bring that insight into
+                each session.
               </p>
 
-              <p class="mb-4">
-                With encouragement from that therapist and my own desire to help others, I enrolled at the <strong>North Carolina School of Advanced Bodywork</strong> and received my <strong>LMBT license in 2024</strong>. I tailor my techniques to address each client’s specific needs, creating a comfortable and welcoming environment.
+              <p  class="mb-4">
+                My approach is therapeutic and personalized, focused on relieving pain, reducing tension, and
+                improving mobility. I combine techniques like <strong>Swedish</strong>, <strong>Neuromuscular</strong>,
+                <strong>Deep Tissue</strong>, and <strong>stretching</strong> to restore balance, ease chronic discomfort,
+                and support overall well-being.
               </p>
 
-              <p class="mb-4">Outside of work, I enjoy:</p>
-              <ul class="mb-4">
-                <li>Kayaking</li>
-                <li>Fishing</li>
-                <li>Hiking</li>
-              </ul>
-
-              <p class="mb-4">
-                Thank you for learning about me — I look forward to helping you on your journey to better health and well-being.
+              <p  class="mb-4">
+                Whether you’re looking to recover, relax, or simply move and feel better, my goal is to help you
+                do just that.
               </p>
               `,
     img: "/images/tobi.jpg",
@@ -405,7 +405,7 @@ export const team = [
                 Whether through Swedish massage, deep tissue work, sports massage, stretching, hot stones, or cupping therapy, my goal is always the same: to help you feel better in your body. 
                 Helping others find relief and improved movement gives my work meaning and purpose.
               </p>`,
-    img: "",
+    img: "/imges/tony.jpg",
   },
 ];
 
