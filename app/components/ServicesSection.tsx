@@ -46,6 +46,9 @@ const ServicesSection: React.FC<{ services: Array<ServiceCategory> }> = ({ servi
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Our Services</h2>
       <p className="text-xl text-center text-gray-600 mb-4">Customized treatments for your wellness journey</p>
+      <p className="text-xl text-center text-gray-600 mb-4">
+        PLEASE NOTE: Prices may vary by therapist based on experience and specialization, so the listed rates reflect a range for each service.
+      </p>
 
       {/* Carousel Container */}
       <div className="relative">
@@ -80,7 +83,7 @@ const ServicesSection: React.FC<{ services: Array<ServiceCategory> }> = ({ servi
                           </span>
                           <span className="text-xl font-semibold text-[#4B4B40]">{service.price}</span>
                         </div>
-                        <p className="text-gray-700 leading-relaxed">{service.description}</p>
+                        <div dangerouslySetInnerHTML={{ __html: service.description }} className="text-gray-700 leading-relaxed" />
                       </div>
                     ))}
                   </div>
