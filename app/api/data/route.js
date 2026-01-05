@@ -180,7 +180,7 @@ export const serviceCategories = [
       {
         name: "Rossiter Workout System",
         duration: "30 min",
-        price: "$50",
+        price: "$55",
         description: "Powerful stretching technique for pain relief and flexibility",
       },
       {
@@ -216,7 +216,7 @@ export const serviceCategories = [
       {
         name: "Aqua Chi - Ionic Foot Bath",
         duration: "30 min",
-        price: "$55",
+        price: "$50",
         description: "Detoxifying ionic foot bath for wellness and balance",
       },
     ],
