@@ -180,7 +180,7 @@ export const serviceCategories = [
       {
         name: "Rossiter Workout System",
         duration: "30 min",
-        price: "$55",
+        price: "$50",
         description: "Powerful stretching technique for pain relief and flexibility",
       },
       {
