@@ -71,21 +71,30 @@ const heroImages = [
     subtitle: "Love. Relax. Repeat.",
     content: `<div class="space-y-4 text-start">
                   <h2 class="text-2xl font-bold uppercase">Valentine’s Day Specials</h2>
-  
+
                   <div class="space-y-2">
-                    <p>2 – 60 Minute Massages – <strong>$140</strong></p>
-                    <p>4 – 30 Minute Massages – <strong>$170</strong></p>
+                    <p>Serenity Therapeutic Massage is offering 3 Massage Packages for Valentines Day 2026.
+                        On sale now until Saturday, February 14th @ 1pm.</p>
+                    <p>Best & only way to purchase your Gift Certificates is to call the office 
+                      <strong><a href="tel:+18036840559">(803) 684-0559</a></strong> & leave a message </p>
+                      <ul>
+                        <li>- Who it's for?</li>
+                        <li>- Who it's from?</li>
+                        <li>- Which package or Your Dollar $$ amount?</li>
+                        <li>- How you'd like to pay? cash, check or debit/credit card</li>
+                        <li>- When you'd like to pick them up?</li>
+                      </ul>
                   </div>
   
                   <div class="space-y-2">
-                    <p>30 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$80</strong></p>
-                    <p>60 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$105</strong></p>
-                    <p>60 Minute Massage, Ear Coning &amp; Aqua Chi Foot Detox – <strong>$165</strong></p>
+                    <p>2 – 60 Minute Massages – <strong>$150</strong></p>
+                    <p>30 Minute Massage &amp; Aqua Chi Foot Detox – <strong>$90</strong></p>
+                    <p>30 Minute Massage, Ear Coning &amp; Aqua Chi Foot Detox – <strong>$140</strong></p>
                   </div>
                 </div>
                 `,
-    active: false,
-    special: false,
+    active: true,
+    special: true,
   },
   {
     url: "/images/mothers-day.jpg",
