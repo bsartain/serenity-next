@@ -93,8 +93,8 @@ const heroImages = [
                   </div>
                 </div>
                 `,
-    active: true,
-    special: true,
+    active: false,
+    special: false,
   },
   {
     url: "/images/mothers-day.jpg",
