@@ -290,36 +290,12 @@ export const team = [
   },
   {
     id: 4,
-    name: "Tobi Johnson",
-    content: `<p class="mb-4">
-                I’m a graduate of the North Carolina School of Advanced Bodywork (2024) and hold a Bachelor
-                of Science in Occupational Therapy (2004). My background in OT gives me a strong
-                understanding of how the body moves and functions in everyday life, and I bring that insight into
-                each session.
-              </p>
-
-              <p  class="mb-4">
-                My approach is therapeutic and personalized, focused on relieving pain, reducing tension, and
-                improving mobility. I combine techniques like <strong>Swedish</strong>, <strong>Neuromuscular</strong>,
-                <strong>Deep Tissue</strong>, and <strong>stretching</strong> to restore balance, ease chronic discomfort,
-                and support overall well-being.
-              </p>
-
-              <p  class="mb-4">
-                Whether you’re looking to recover, relax, or simply move and feel better, my goal is to help you
-                do just that.
-              </p>
-              `,
-    img: "/images/tobi.jpg",
-  },
-  {
-    id: 5,
     name: "Eric Grose",
     content: "Bio coming soon.",
     img: "/images/eric.jpg",
   },
   {
-    id: 6,
+    id: 5,
     name: "Amanda Rose",
     content: `<p class="mb-5 mt-5">
                 I attended <strong>Southeastern School of Neuromuscular and Massage Therapy</strong>
@@ -352,7 +328,7 @@ export const team = [
     img: "/images/amanda.jpg",
   },
   {
-    id: 7,
+    id: 6,
     name: "Charlene Hracs",
     content: `<p class="mb-4">
                 I think I've always been a "therapist" at heart. I'm an empathetic and have pretty much felt other people's emotions and pain before I knew what it all meant or how to channel it for the betterment of others.
@@ -386,7 +362,7 @@ export const team = [
     img: "/images/charlene.jpg",
   },
   {
-    id: 8,
+    id: 7,
     name: "Antonio 'Tony' Hammond",
     content: `<p class="mb-4">
                 I hold a bachelor’s degree in Exercise and Sports Science and spent 2½ years working as a chiropractic assistant. 
