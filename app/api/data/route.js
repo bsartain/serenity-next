@@ -28,8 +28,8 @@ const heroImages = [
                         <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS.</p>
                     </div>
                 </div>`,
-    active: false,
-    special: false,
+    active: true,
+    special: true,
   },
   {
     url: "/images/fathers-day.jpg",
