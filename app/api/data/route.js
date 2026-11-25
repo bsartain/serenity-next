@@ -8,23 +8,25 @@ const heroImages = [
     content: `<div class="pr-6 pl-6 pb-6 rounded-2xl space-y-6 text-white">
                     <h2 class="text-2xl font-playfair font-semibold">Serenity Therapeutic Massage Christmas Gift Certificate Specials</h2>
                     <div class="space-y-2">
-                        <p class="text-lg font-semibold">2 × 60min Massage Sessions – $140.00</p>
-                        <p class="text-lg font-semibold">4 × 30min Massage Sessions – $170.00</p>
+                        <p class="text-lg font-semibold">2 × 60min Massage Sessions – $150.00</p>
+                        <p class="text-lg font-semibold">4 × 30min Massage Sessions – $180.00</p>
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-xl font-semibold">Package #1</h3>
-                        <p>$80 – 30min Massage &amp; 1 Aqua Chi Foot Detox</p>
+                        <p>$90 – 30min Massage &amp; 1 Aqua Chi Foot Detox</p>
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-xl font-semibold">Package #2</h3>
-                        <p>$110 – 60min Massage &amp; 1 Aqua Chi Foot Detox</p>
+                        <p>$120 – 60min Massage &amp; 1 Aqua Chi Foot Detox</p>
                     </div>
                     <div class="space-y-2">
                         <h3 class="text-xl font-semibold">Package #3</h3>
-                        <p>$130 – 30min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
+                        <p>$140 – 30min Massage, 1 Aqua Chi Foot Detox &amp; Ear Coning</p>
                     </div>
                     <div class="space-y-1 mt-4">
-                        <p class="font-semibold">Call (803) 684-0559 to arrange for pick-up</p>
+                        <h1 class="font-semibold" style="font-size: 30px">Call (803) 684-0559</h1>
+                        <p class="font-semibold">Please leave a message letting us know which therapist you'd like to purchase a certificate from so that they can coordinate payment and pickup.</p>
+                        <h1 class="font-semibold" style="font-size: 30px">Specials good until December 26th, 2026.</h1>
                         <p class="font-semibold">WE ACCEPT: CASH / CHECKS / DEBIT / CREDIT CARDS.</p>
                     </div>
                 </div>`,
